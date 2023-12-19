@@ -6,12 +6,12 @@ const contactsRouter = express.Router()
 
 contactsRouter.get('/', contactsController.getAll);
 
-contactsRouter.get('/:contactId', contactsController.getById);
+// contactsRouter.get('/:contactId', contactsController.getById);
 
-contactsRouter.post('/', isEmptyBody, validateAdd, contactsController.add)
+// contactsRouter.post('/', isEmptyBody, validateAdd, contactsController.add)
 
-contactsRouter.delete('/:contactId', contactsController.deleteById)
+// contactsRouter.delete('/:contactId', contactsController.deleteById)
 
-contactsRouter.put('/:contactId', isEmptyBody, validateUpdate, contactsController.updateById)
+// contactsRouter.put('/:contactId', isEmptyBody, validateUpdate, contactsController.updateById)
 
 export default contactsRouter;
